@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--[if IE 8]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head>
+		<meta charset="utf-8">
+		<title>KaozRadio</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/frenzy-red.css">
+		<link rel="stylesheet" href="css/stilo.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="img/ico/favicon.ico">
+
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57-precomposed.png">
+		
+		<!-- JS Libs -->
+		
+		<script>window.jQuery || document.write('<script src="js/libs/jquery.js"><\/script>')</script>
+
+		<script src="js/libs/modernizr.js"></script>
+		<script src="js/libs/selectivizr-min.js"></script>
+		
+		<script src="js/bootstrap/bootstrap.js"></script>
+		<script src="js/plugins/slides.jquery.js"></script>
+		<script src="js/plugins/camera.min.js"></script>
+		<script src="js/custom.js"></script>
+
+	</head>
+	<body>
+		<div id="bg"><img src="img/assets/bg/halftone.png" alt="background image" /></div>
+
+		<!--///////////////////////////// Header Area //////////////////////////////////-->
+
+		<!-- Header Start -->
+		<header class="header">
+			<div class="container visible-desktop">
+				<div class="row">
+					<div class="span12" role="navigation" id="topnav">
+						<div class="topnav">
+							<div class="pull-left">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="nav" class="container">
+				<div class="row">
+					<div class="span10">
+						<img src="img/assets/logo.png" alt="Kaozradio" width="199" height="129">
+					</div>
+					<div class="span2" id="menuPrincipal">
+						<nav id="responsive-nav" class="hidden-desktop">
+							<div class="collapse-menu">
+								<a href="#" class="brand">KaozRadio</a>
+								<form class="search">
+									<input class="input-medium" type="text" placeholder="Search&hellip;">
+								</form>
+							<span class="collapse-trigger icon awe-chevron-down"></span>
+							</div>
+							<ul class="first-level dropdown-nav">
+								<li><a href="#enviarMusica" data-toggle="modal">Envianos tu musica</a>
+								
+								</li>
+							</ul>
+						</nav>
+						<nav id="main-navigation" class="visible-desktop">
+							<ul class="first-level">
+								<li><a href="#enviarMusica" data-toggle="modal">Envianos tu musica</a>
+									
+								</li>							
+							</ul>
+						</nav>
+					</div>
+			  </div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!--///////////////////////////// Slider Area //////////////////////////////////-->
+
+		<!-- Main Slider Start -->
+		<div class="container hidden-phone" id="slideshow">
+			<section id="slider" class="row">
+				<div class="span8">
+					<!-- Begin Slider -->
+					<div id="slidejs">
+						<!-- Slide items -->
+						<div class="slides-container">	
+							<div class="slide-outer span8">
+								<div class="slide-inner" id="imgCancion"></div>
+							
+								<div class="slide-caption">
+									<div class="caption-inner">
+										<div class="caption-after"></div>
+										<div class="caption">
+											Esta sonando : <span id="recargaCancion"></span> <span id="nombreCancion"></span>
+											<span id="masInfo" class="mano"><i class="awe-info-sign"></i></span>
+											<br>
+											<span>
+												<audio controls autoplay preload="auto">
+													<source src="http://192.198.83.230:9888/;stream.mp3" type="audio/mp3">
+													Your browser does not support the audio element.
+												</audio>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Slider -->
+				</div>
+				<!-- End Span8 -->
+
+				<!-- Begin Span4 Carousel Slider --> 
+				<div class="span4 carousel-widget visible-desktop" id="slider-widget">
+					<div class="widget-header">
+						<h3 class="widget-heading">Escuchaste</h3>
+					</div>
+					<div class="widget-content carousel slide" id="carousel-widget">
+						<ol class="carousel-indicators">
+							<li class="active" data-slide-to="0" data-target="#carousel-widget"></li>
+							<li data-slide-to="1" data-target="#carousel-widget"></li>
+						</ol>
+						<!-- Begin Carousel Inner -->
+						<div class="carousel-inner">
+							<!-- Begin Slide Section / Carousel Item -->
+							<div class="slide-section active item">
+								<div class="separator"></div>
+							    <div class="slide-item media" id="thumb1"></div>
+
+								<div class="separator"></div>
+
+								<div class="slide-item media" id="thumb2"></div>
+								
+								<div class="separator"></div>
+
+								<div class="slide-item media" id="thumb3"></div>
+							</div>
+							<!-- End Slide Section / Carousel Item -->
+							<!-- =================================================================== -->
+							<!-- =================================================================== -->
+							<!-- Begin Slide Section / Carousel Item -->
+							<div class="slide-section item">
+								<div class="separator"></div>
+							    <div class="slide-item media" id="thumb4"></div>
+
+								<div class="separator"></div>
+
+								<div class="slide-item media" id="thumb5"></div>
+								
+								<div class="separator"></div>
+
+								<div class="slide-item media" id="thumb6"></div>
+							</div>
+							<!-- End Slide Section / Carousel Item -->
+							
+						</div>
+						<!-- End Carousel Inner -->
+					
+					</div>
+				</div>
+				<!-- End Span 4 Carousel Slider -->
+			</section>
+		</div>
+		<!-- Main Slider End -->
+
+		<!--///////////////////////////// End Slider Area //////////////////////////////////-->
+
+		<!--///////////////////////////// Main Content Area //////////////////////////////////-->
+
+		<!-- Main Content Wrapper Start -->
+		<div class="container" role="main" id="infoBanda">
+			
+			<div id="content" class="span10">
+					<div class="post-lists">
+						<article class="latest-article">
+							<div class="btn btn-mini btn-danger" id="cerrarInfoBanda">Cerrar</div>
+							<!--<div class="article-thumbnail">
+								<a href="#" title="Thumbnail"><img src="img/assets/slideshow/thumbnail-big.png" alt="Image"/></a>
+							</div>-->
+							<div class="article-content">
+								<div class="article-header">
+									<h3><a href="#" title="Title" id="bandaSeleccion"></a></h3>
+								</div>
+								<div class="article-excerpt">
+									<p>
+									Canción : <span id="cancionSelecciona"></span>
+									</p>
+									<p>Álbum : <span id="albumSelecciona"></span></p>
+									<p>Año : <span id="anioSelecciona"></span></p>
+									<p>País : <span id="paisSelecciona"></span></p>
+									<p>Contacto : <span id="contactoSelecciona"></span>   <span id="abreLink" class="alert alert-error"></span></p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+		</div>
+		<!-- Main Content Wrapper End -->
+
+		<!--///////////////////////////// Footer Area //////////////////////////////////-->
+
+		<!-- Footer Start -->
+		<footer class="footer">
+			<div class="container footer-container">
+				<section class="row">
+					
+
+					<div class="span3 footer-extra">
+						<div class="footer-box">
+							<!--<h4>Nosotros</h4>-->
+							<p><a href="#"><img src="img/assets/logo.png" alt="Frenzy" ></a></p>
+							<!--<p class="color"><em>Responsive HTML template build on Twitter Bootstrap and LESSCSS.</em></p>
+							<address>
+								<p><strong>Frenzy, Inc.</strong></p>
+								<p><span class="awe-home"></span> 999 Folsom Ave, Suite 111</p>
+								<p><span class="awe-map-marker"></span> San Francisco, CA 94107</p>
+								<p><span class="awe-phone"></span><abbr title="Phone"> P:</abbr> (123) 456-7890</p>
+							</address>-->
+							
+							<address>
+								<p><strong>Contacto</strong></p>
+								<p><span class="awe-envelope-alt"></span><a href="mailto:#"> info@kaoztv.com</a></p>
+							</address>
+						</div>
+					</div>
+					<div class="span2 footer-extra">
+						<div class="footer-box">
+							
+						</div>
+						<div class="footer-box">
+							<h4>Demuéstranos tu amor y síguenos</h4>
+							<ul class="social-media">
+								<li><a href="https://www.facebook.com/kaoztvface" target="_blank"><span class="awe-facebook"></span></a></li>
+								<li><a href="https://twitter.com/kaoztv" target="_blank"><span class="awe-twitter"></span></a></li>
+								<!--<li><a href="#"><span class="awe-pinterest"></span></a></li>
+								<li><a href="#"><span class="awe-google-plus"></span></a></li>
+								<li><a href="#"><span class="awe-linkedin"></span></a></li>-->
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+			</div>
+			<div class="container" role="navigation">
+				<section class="row">
+					<div class="footer-menu">
+						<ul>
+							<li><a href="#" title="link">Nosotros</a></li>
+							<li><a href="#" title="link">Contactanos</a></li>
+							<li><a href="#" title="link">Condiciones</a></li>
+						</ul>
+					</div>
+					<div class="footer-logo visible-desktop">
+						<a href="#" title="Frenzy">KaozRadio</a>
+					</div>
+					<div class="copyright">
+						<p>&copy; 2015 KaozTv y KaozRadio son marcas registradas. Todos los derechos reservados.						</p>
+				  </div>
+			  </section>
+			</div>
+		</footer>
+		<!-- Footer End -->
+
+ 
+<!-- Modal -->
+<div id="enviarMusica" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-header">
+    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    	<h3 id="signInModalLabel">Envíanos tu música</h3>
+    </div>
+	<div class="modal-body" id="cuerpoModal">
+		<form id="contactoCancion" name="contactoCancion">
+			<p><input type="email" class="span3" name="email" id="email" placeholder="Email" required ></p>
+			<p><span class="btn btn-primary" id="botonEnviaContacto">Enviar</span>
+			
+			</p>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+	</div>
+</div>
+
+	</body>
+	
+
+	<style type="text/css">
+	#imgCancion{
+		background: #f00 url(img/kaoz-logo-chico2.png);
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 100%;
+	}
+	</style>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+	$('#botonEnviaContacto').live('click',function() {
+		var datos = $('#contactoCancion').serialize();
+		var pagina= 'termycond.php';
+		var div = 'cuerpoModal';
+		enviaDatos(pagina,div,datos);
+	});
+	$('#enviarMusica').on('hidden', function () {
+    	$('#cuerpoModal').html('<form id="contactoCancion" name="contactoCancion"><p><input type="email" class="span3" name="email" id="email" placeholder="Email" required ></p><p><span class="btn btn-primary" id="botonEnviaContacto">Enviar</span></p></form>');
+	});
+	</script>
+</html>

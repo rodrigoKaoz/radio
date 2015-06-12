@@ -1,0 +1,50 @@
+[
+  {
+    "actual": [
+      {
+        "id": 0,
+        "name": "Gamble",
+        "banda": "Amelia",
+        "thumb": "Stacie"
+      }
+    ],
+    "pasadas": [
+      {
+        "id": 0,
+        "nombre": "Oneil",
+        "banda": "Bartlett",
+        "thumb": "Susana"
+      },
+      {
+        "id": 1,
+        "nombre": "Patrick",
+        "banda": "Marsh",
+        "thumb": "Tyler"
+      },
+      {
+        "id": 2,
+        "nombre": "Veronica",
+        "banda": "Verna",
+        "thumb": "Warren"
+      },
+      {
+        "id": 3,
+        "nombre": "Trevino",
+        "banda": "Reva",
+        "thumb": "Vega"
+      },
+      {
+        "id": 4,
+        "nombre": "Jenna",
+        "banda": "Aimee",
+        "thumb": "Dixon"
+      },
+      {
+        "id": 5,
+        "nombre": "Gena",
+        "banda": "Vivian",
+        "thumb": "Walton"
+      }
+    ]
+  }
+]
