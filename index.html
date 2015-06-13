@@ -50,24 +50,27 @@
 					</div>
 				</div>
 			</div>
-			<div id="nav" class="container ">
+			<div id="nav" class="container">
 				<div class="row">
 					<div class="span10">
 						<img src="img/assets/logo.png" alt="Kaozradio" width="199" height="129">
 					</div>
-					<div class="span2">
+					<div class="span2" id="menuPrincipal">
 						<nav id="responsive-nav" class="hidden-desktop">
 							<div class="collapse-menu">
 								<a href="#" class="brand">KaozRadio</a>
+								<form class="search">
+									<input class="input-medium" type="text" placeholder="Search&hellip;">
+								</form>
 							<span class="collapse-trigger icon awe-chevron-down"></span>
 							</div>
-							<ul class="first-level dropdown-nav" >
+							<ul class="first-level dropdown-nav">
 								<li><a href="#enviarMusica" data-toggle="modal">Envianos tu musica</a>
 								
 								</li>
 							</ul>
 						</nav>
-						<nav id="main-navigation" class="visible-desktop" id="menuPrincipal">
+						<nav id="main-navigation" class="visible-desktop">
 							<ul class="first-level">
 								<li><a href="#enviarMusica" data-toggle="modal">Envianos tu musica</a>
 									
@@ -166,30 +169,6 @@
 				</div>
 				<!-- End Span 4 Carousel Slider -->
 			</section>
-		</div>
-		<div class="hidden-desktop container espacioMovil">
-			<div class="row">
-				<div class="span12">
-					<div class="row">
-						<div id="imgCancionTelefono" class="span12"></div>	
-					</div>
-					<div class="row">
-						<div class="span12">
-						
-							<audio controls autoplay preload="auto">
-								<source src="http://192.198.83.230:9888/;stream.mp3" type="audio/mp3">
-								Your browser does not support the audio element.
-							</audio>
-						</div>
-					</div>
-					<div class="row">
-						<div class="span12">
-							<span id="ahoraSonandoMovil"></span>
-							<span id="masInfoCelu" class="mano btn btn-info"><i class="awe-info-sign"></i></span>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		<!-- Main Slider End -->
 
@@ -334,6 +313,5 @@
 	$('#enviarMusica').on('hidden', function () {
     	$('#cuerpoModal').html('<form id="contactoCancion" name="contactoCancion"><p><input type="email" class="span3" name="email" id="email" placeholder="Email" required ></p><p><span class="btn btn-primary" id="botonEnviaContacto">Enviar</span></p></form>');
 	});
-
 	</script>
 </html>
